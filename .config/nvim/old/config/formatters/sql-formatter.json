@@ -1,0 +1,6 @@
+{
+  "tabWidth": 8,
+  "paramTypes": {
+    "custom": [{ "regex": "\\$\\{.*\\}" }]
+  }
+}
