@@ -38,13 +38,22 @@ export BUN_INSTALL="$HOME/.bun"
 [ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
 # bun end
 
-# export JAVA_HOME="$HOME/jdk-11.0.2"
+# java
+# export JAVA_HOME="$HOME/jdk/jdk-11.0.23+9"
+# export JAVA_HOME="$HOME/jdk/jdk-17.0.2"
+# [ -d "$JAVA_HOME/bin" ] && export PATH="$PATH:$JAVA_HOME/bin"
+# java end
 
-# export ANDROID_HOME="$HOME/Android/sdk"
-# export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin"
-#
+[ -d "$HOME/Android/sdk" ] && export ANDROID_HOME="$HOME/Android/sdk"
+[ -d "$HOME/Android/Sdk" ] && export ANDROID_HOME="$HOME/Android/Sdk"
+[ -d "$ANDROID_HOME" ] && export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin"
+
 # export PATH="$PATH:/mnt/c/platform-tools"
 
 # export WSL_HOST=$(tail -1 /etc/resolv.conf | cut -d' ' -f2)
 # export ADB_SERVER_SOCKET=tcp:$WSL_HOST:5037
 
+# export PATH="$PATH:$HOME/apache-maven-3.9.7/bin"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
